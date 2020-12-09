@@ -30,6 +30,22 @@
 
         <!-- Dropdown -->
         <style>
+
+        #iframe_main {
+          height: 900px;
+          width: 100%;
+
+        }
+
+        #idiv {
+
+          top: 41px;
+          left: 0px;
+          right: 0px;
+          bottom: 0px;
+          position: sticky;
+
+        }
           .collapsible {
             background-color: #4C4C4C;
             color: white;
@@ -172,21 +188,7 @@
 <!--Page -->
     </head>
     <body id="page-top">
-        <!-- Navigation-->
-        <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
-            <div class="container">
-                <a class="navbar-brand js-scroll-trigger" href="#page-top">Landing Page</a>
-                <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
-                    Menu
-                    <i class="fas fa-bars"></i>
-                </button>
-                <div class="collapse navbar-collapse" id="navbarResponsive">
-                    <ul class="navbar-nav ml-auto">
-                        <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#map">Explore the Data!</a></li>
-                    </ul>
-                </div>
-            </div>
-        </nav>
+
         <!-- Masthead-->
         <header class="masthead">
             <div class="container d-flex h-100 align-items-center">
@@ -270,8 +272,9 @@
 
             <!-- Map -->
 
-           <div class="column" id='map' style='width: 800px; height: 900px; float: right;'>
-             </div>
+           <div class="column" id='idiv' style='float: right;'>
+             <iframe id="iframe_main" frameborder="0" src="https://gbryant.carto.com/builder/e3229ac2-11a2-41ed-9a3e-5bc50b74ac8c/embed" allowfullscreen webkitallowfullscreen mozallowfullscreen oallowfullscreen msallowfullscreen></iframe>
+            </div>
 
            </div>
         </section>
@@ -279,13 +282,14 @@
 
 
         <!-- script for maps and Dropdown -->
-        <!-- script for map -->
-        <script>
+        <!-- script for map
         mapboxgl.accessToken = 'pk.eyJ1IjoieXVqaW5nNiIsImEiOiJja2d2bXd6OXowMXhoMnJxeHowdGU3M291In0.L3hc0wUR2zZBd5HvhyJUiA';
         var map = new mapboxgl.Map({
           container: 'map',
           style: 'mapbox://styles/yujing6/cki70w2oy456t1apc0xi4rlj8'
-        });
+        });-->
+        <script>
+
 
 
 
